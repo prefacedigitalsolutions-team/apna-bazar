@@ -1,0 +1,55 @@
+.ab-banner {
+  border-bottom: 1px solid #111111;
+  background-color: #ffffff;
+  padding: 40px 16px;
+}
+
+.ab-banner-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ab-banner-eyebrow {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+.ab-banner-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #111111;
+}
+
+.ab-banner-subtitle {
+  margin: 0;
+  max-width: 640px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.ab-banner-meta {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #15803d;
+}
+
+@media (max-width: 640px) {
+  .ab-banner {
+    padding: 28px 16px;
+  }
+
+  .ab-banner-title {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,262 @@
+.hb-hero {
+  position: relative;
+  width: 100%;
+  height: 540px;
+  overflow: hidden;
+  background-color: #143628;
+  border-bottom: 1px solid #143628;
+  border-radius: 1px;
+}
+
+.hb-media-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.hb-img-motion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  will-change: transform, opacity;
+}
+
+.hb-bg-img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.hb-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 35, 26, 0.88) 0%,
+    rgba(13, 35, 26, 0.58) 52%,
+    rgba(13, 35, 26, 0.2) 100%
+  );
+}
+
+.hb-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hb-copy {
+  max-width: 600px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hb-tag {
+  display: inline-block;
+  background-color: #d97706;
+  color: #ffffff;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  margin-bottom: 16px;
+  border-radius: 1px;
+}
+
+.hb-heading {
+  font-size: clamp(32px, 4.5vw, 54px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin: 0 0 14px;
+}
+
+.hb-subtext {
+  font-size: 16.5px;
+  line-height: 1.55;
+  color: #e5e7eb;
+  margin: 0 0 28px;
+  max-width: 480px;
+}
+
+.hb-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.hb-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 28px;
+  background-color: #d97706;
+  color: #ffffff;
+  font-size: 14.5px;
+  font-weight: 700;
+  border: 1px solid #d97706;
+  border-radius: 1px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.hb-primary-btn:hover {
+  background-color: #b45309;
+  border-color: #b45309;
+}
+
+.hb-outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 14.5px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 1px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.hb-outline-btn:hover {
+  background-color: #ffffff;
+  color: #143628;
+}
+
+.hb-footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hb-indicators {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hb-bar-dot {
+  width: 28px;
+  height: 4px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 0;
+  transition: width 0.25s ease, background-color 0.25s ease;
+}
+
+.hb-bar-dot.active {
+  width: 48px;
+  background-color: #d97706;
+}
+
+.hb-nav-arrows {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hb-nav-arrows button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background-color: rgba(20, 54, 40, 0.65);
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 1;
+  border-radius: 1px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.hb-nav-arrows button:hover {
+  background-color: #d97706;
+  border-color: #d97706;
+}
+
+@media (max-width: 768px) {
+  .hb-hero {
+    height: 350px;
+  }
+
+  .hb-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(13, 35, 26, 0.22) 0%,
+      rgba(13, 35, 26, 0.58) 55%,
+      rgba(13, 35, 26, 0.88) 100%
+    );
+  }
+
+  .hb-inner {
+    padding: 16px 16px 14px;
+  }
+
+  .hb-copy {
+    margin-top: auto;
+    margin-bottom: 12px;
+    max-width: 100%;
+  }
+
+  .hb-tag {
+    font-size: 10px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    letter-spacing: 0.7px;
+  }
+
+  .hb-heading {
+    font-size: 25px;
+    line-height: 1.12;
+    margin-bottom: 6px;
+  }
+
+  .hb-subtext {
+    font-size: 12.5px;
+    line-height: 1.4;
+    margin-bottom: 14px;
+    max-width: 92%;
+  }
+
+  .hb-cta-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hb-primary-btn,
+  .hb-outline-btn {
+    height: 36px;
+    padding: 0 14px;
+    font-size: 12.5px;
+    width: auto;
+  }
+
+  .hb-bar-dot {
+    width: 18px;
+    height: 3px;
+  }
+
+  .hb-bar-dot.active {
+    width: 28px;
+  }
+
+  .hb-nav-arrows button {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
